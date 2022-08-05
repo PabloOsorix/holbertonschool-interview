@@ -44,13 +44,6 @@ Create a function `def pascal_triangle(n):` that returns a list of lists of inte
     [1,4,6,4,1]
     guillaume@ubuntu:~/0x00$ 
 ```    
-
-**Repo:**
-
-*   GitHub repository: `holbertonschool-interview`
-*   Directory: `0x00-pascal_triangle`
-*   File: [0-pascal_triangle.py](https://github.com/Imanolasolo/holbertonschool-interview/blob/master/0x00-pascal_triangle/0-pascal_triangle.py)
-
 ## Credits
 
 
