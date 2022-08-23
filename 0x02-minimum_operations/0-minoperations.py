@@ -7,21 +7,18 @@ exactly n H characters in the file.
 
 
 def minOperations(n):
-    '''
-    returns min operations to get n Hs
-    '''
-    operations = 0
-    if n <= 1:
-        return 0
-    for i in range(2, n + 1):
-        '''
-        check if n could be broken into smaller parts
-        '''
-        while n % i == 0:
-            ''' reduce n into a smaller part '''
-            n = n / i
-            '''
-            if so add the nbr of smaller parts (in fact 1 copy and 4 paste)
-            '''
-            operations += i
-    return
+    """minOperations is a method that calculates
+    the fewest number of operations needed to result
+    in exactly n H characters
+    Args:
+        n (int): amount of H
+    Return:
+        minimum number of operations (an integer)
+    """
+    minOp, div = 0, 2
+    while isinstance(n, int) and n > 1:
+        while n % div:
+            div += 1
+        minOp += div
+        n = int(n / div)
+    return minOp
